@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keno Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keno Game</h1>
+        <div class="keno-board"></div>
+        <div class="controls">
+            <div class="bet-controls">
+                <input type="number" id="bet-amount" placeholder="Bet Amount">
+                <button id="place-bet">Place Bet</button>
+            </div>
+            <div class="spin-controls">
+                <input type="number" id="spin-count" placeholder="Spin Count">
+                <button id="auto-spin">Auto Spin</button>
+                <button id="stop-spin">Stop Auto Spin</button>
+            </div>
+            <div class="risk-controls">
+                <button id="halve-bet">Halve Bet</button>
+                <button id="double-bet">Double Bet</button>
+                <button id="classic-risk">Classic Risk</button>
+                <button id="high-risk">High Risk</button>
+            </div>
+        </div>
+        <div id="result-display"></div>
+        <div class="history">
+            <h2>History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
